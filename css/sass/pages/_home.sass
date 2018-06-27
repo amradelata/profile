@@ -1,0 +1,340 @@
+$primary-color: #ffd740
+$lite-blue: #28c8c6
+
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto Condensed', sans-serif
+	background: #ebecee	
+	height: 2000px
+
+.container
+	margin-left: 0
+h1
+	margin: 0
+// start nav
+nav
+	background: #09161c
+	color: #fff
+	position: relative
+	padding: 20px
+	z-index: 99999
+
+	i
+		// inline-block
+		font-size: 20px
+	input
+		// inline-block
+		background: #09161c
+		border: none
+		outline: none
+		padding: 17px 0
+		position: absolute
+		top: 0
+		left: 58px
+	::placeholder
+		color: #6f787d	
+		font-size: 18px
+	.fa-question-circle
+		position: absolute
+		right: 70px
+		top: -2px
+		border-left: 1px solid #6f787d
+		padding: 20px
+
+	.fa-sign-in-alt
+		position: absolute
+		right: 15px
+		top: -2px
+		border-left: 1px solid #6f787d
+		padding: 20px
+	h1
+		position: absolute
+		font-size: 30px
+		font-weight: bold
+		left: 50%
+		transform: translate(-50%)
+		top: 10px
+
+// end nav
+
+// start fixed menu
+.fixed-menu
+	padding: 61px 0
+	position: fixed
+	left: -90px
+	top: 0
+	height: 100% 
+	width: 100px
+	z-index: 9999
+	background: #15222a
+	color: #fafaf8
+	cursor: pointer
+	i
+		display: block
+		text-align: center
+		font-size: 35px
+		margin-bottom: 10px
+	span
+		display: block
+		text-align: center
+		font-size: 18px
+		margin-bottom: 25px
+	.content
+		background: #15222a
+		cursor: pointer
+	.content:hover
+		background: #1a2a33
+	// end fixed menu
+
+.hero-section
+	position: relative
+	height: 38vh
+	// .hero
+	// 	margin-top: 100px
+	.profile-img
+		background-image: url('../img/3.png')
+		height: 200px
+		// margin-right: -15px
+		background-size: cover
+		background-position: center center
+		position: relative
+		.fa-hand-lizard
+			position: absolute
+			background: rgba(120, 115, 109, 0.3215686274509804)
+			padding: 10px
+			right: 2px
+			top: 63px
+			display: block
+			i
+				color: #fff
+				font-size: 25px
+		.fa-hand-lizard-2
+			position: absolute
+			background: rgba(120, 115, 109, 0.3215686274509804)
+			padding: 10px
+			right: 2px
+			display: block	
+			i
+				color: #fff
+				font-size: 25px		
+	.map-img
+		background-image: url('../img/2.png')
+		height: 200px
+					
+	.name
+		position: relative
+		background: #fff
+		color: #838d96
+		height: 100px
+		margin-top: -98px
+		padding: 10px 40px
+		h1
+			color: #000
+			margin-bottom: 20px
+		i
+			display: inline-block
+		p
+			display: inline-block
+			margin-right: 35px
+		.moments-46
+			cursor: pointer
+			padding: 14px 45px
+			text-align: center
+			background: #f5f6f8
+			position: absolute
+			top: 0
+			right: 0
+			h2
+				margin: 0
+				color: #00b6de
+			h4
+				margin: 0
+	.friends
+		position: fixed
+		top: 0
+		bottom: 0
+		right: 0
+		background: #fff
+		padding: 44px 8px
+		overflow: scroll
+		input
+			background: #ebecee
+			border: none
+			border-radius: 7px
+			padding: 10px 10px
+			margin-top: 30px
+			margin-bottom: 20px
+			width: 100%
+			outline: none
+		p
+			margin-bottom: 20px
+
+		.friend
+			position: relative
+			// padding: 20px
+			.cer
+				position: absolute
+				background: #fff
+				border-radius: 50%
+				bottom: 21px
+				left: 45px
+				padding: 15px
+			.dot-red
+				position: absolute
+				background: #ff444c
+				border-radius: 50%
+				bottom: 30px
+				left: 55px
+				padding: 5px	
+
+			.dot-green
+				position: absolute
+				background: #45ca19
+				border-radius: 50%
+				bottom: 30px
+				left: 55px
+				padding: 5px
+
+
+			img
+				margin-right: 11px
+	.friends-img	
+		padding-left: 0
+		padding-right: 0
+		.friends-img-1,
+		.friends-img-2,
+		.friends-img-3,
+		.friends-img-4,
+		.friends-img-5,
+		.friends-img-6,
+		.friends-img-7,
+		.friends-img-8,
+		.friends-img-9
+			height: 100px
+			background-size: cover
+			background-position: center center
+		.friends-img-9
+			position: relative
+			.ovarlay
+				cursor: pointer
+				text-align: center
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				color: #fff
+				background: #00b4e2
+				h5
+					margin: 0
+				h2
+					margin-bottom: -15px
+	.friend	
+		img
+			border-radius: 50%
+			width: 70px
+			display: inline-block
+		p
+				display: inline-block	
+				margin-bottom: 50px
+.hero-section .friends .friend img 
+	margin: 0px
+		
+.cards
+	display: flex
+	flex-wrap: wrap
+	// position: relative
+	.card
+		flex-basis: calc(48% - 20px)
+		display: inline-block
+		background-color: #fff
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+		margin: 10px
+		border-radius: 4px
+		overflow: hidden
+		.buttons
+			text-align: center
+			// width: 100%
+			background: #e6e8ec
+			color: #828f98
+			padding: 5px 20px
+			margin-bottom: -15px
+			margin-right: -15px
+			margin-left: -15px
+			position: relative
+			// overflow: hidden
+			// bottom: 0
+			// right: 0
+			// left: 0
+			p
+				display: inline-block
+				margin-left: 15px
+		.heart
+			display: inline-block
+			cursor: pointer
+		.comments
+		
+			display: inline-block
+			margin-right: 100px
+			margin-left: 100px
+			cursor: pointer
+			
+		.hand-lizard
+			display: inline-block
+			cursor: pointer
+			
+
+
+		.image
+			background-size: cover
+			background-position: center center
+			width: 100%
+			height: 200px
+			position: relative
+			.ovarlay
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				background: rgba(33, 35, 34, 0.68)
+			img
+				position: absolute
+				border-radius: 50%
+				width: 100px
+				top: 10%
+				left: 50%
+				transform: translate(-50%)
+			h2
+				margin: 0
+				color: #fff
+				// text-align: center
+				position: absolute
+				bottom: 22%
+				left: 50%
+				transform: translate(-50%)
+
+			.time
+				color: #a9a8ae
+				position: absolute
+				bottom: 10%
+				left: 50%
+				transform: translate(-50%)
+				span
+					margin-right: 15px
+		.content
+			padding: 15px
+
+			h3
+				margin: 0
+				font-size: 25px
+				margin-bottom: 10px
+
+
+
+

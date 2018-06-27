@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background: #ebecee;
+  height: 2000px; }
+
+.container {
+  margin-left: 0; }
+
+h1 {
+  margin: 0; }
+
+nav {
+  background: #09161c;
+  color: #fff;
+  position: relative;
+  padding: 20px;
+  z-index: 99999; }
+  nav i {
+    font-size: 20px; }
+  nav input {
+    background: #09161c;
+    border: none;
+    outline: none;
+    padding: 17px 0;
+    position: absolute;
+    top: 0;
+    left: 58px; }
+  nav ::placeholder {
+    color: #6f787d;
+    font-size: 18px; }
+  nav .fa-question-circle {
+    position: absolute;
+    right: 70px;
+    top: -2px;
+    border-left: 1px solid #6f787d;
+    padding: 20px; }
+  nav .fa-sign-in-alt {
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    border-left: 1px solid #6f787d;
+    padding: 20px; }
+  nav h1 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10px; }
+
+.fixed-menu {
+  padding: 61px 0;
+  position: fixed;
+  left: -90px;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 9999;
+  background: #15222a;
+  color: #fafaf8;
+  cursor: pointer; }
+  .fixed-menu i {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px; }
+  .fixed-menu span {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .fixed-menu .content {
+    background: #15222a;
+    cursor: pointer; }
+  .fixed-menu .content:hover {
+    background: #1a2a33; }
+
+.hero-section {
+  position: relative;
+  height: 38vh; }
+  .hero-section .profile-img {
+    background-image: url("../img/3.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .hero-section .profile-img .fa-hand-lizard {
+      position: absolute;
+      background: rgba(120, 115, 109, 0.3215686275);
+      padding: 10px;
+      right: 2px;
+      top: 63px;
+      display: block; }
+      .hero-section .profile-img .fa-hand-lizard i {
+        color: #fff;
+        font-size: 25px; }
+    .hero-section .profile-img .fa-hand-lizard-2 {
+      position: absolute;
+      background: rgba(120, 115, 109, 0.3215686275);
+      padding: 10px;
+      right: 2px;
+      display: block; }
+      .hero-section .profile-img .fa-hand-lizard-2 i {
+        color: #fff;
+        font-size: 25px; }
+  .hero-section .map-img {
+    background-image: url("../img/2.png");
+    height: 200px; }
+  .hero-section .name {
+    position: relative;
+    background: #fff;
+    color: #838d96;
+    height: 100px;
+    margin-top: -98px;
+    padding: 10px 40px; }
+    .hero-section .name h1 {
+      color: #000;
+      margin-bottom: 20px; }
+    .hero-section .name i {
+      display: inline-block; }
+    .hero-section .name p {
+      display: inline-block;
+      margin-right: 35px; }
+    .hero-section .name .moments-46 {
+      cursor: pointer;
+      padding: 14px 45px;
+      text-align: center;
+      background: #f5f6f8;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .hero-section .name .moments-46 h2 {
+        margin: 0;
+        color: #00b6de; }
+      .hero-section .name .moments-46 h4 {
+        margin: 0; }
+  .hero-section .friends {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    padding: 44px 8px;
+    overflow: scroll; }
+    .hero-section .friends input {
+      background: #ebecee;
+      border: none;
+      border-radius: 7px;
+      padding: 10px 10px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      width: 100%;
+      outline: none; }
+    .hero-section .friends p {
+      margin-bottom: 20px; }
+    .hero-section .friends .friend {
+      position: relative; }
+      .hero-section .friends .friend .cer {
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        bottom: 21px;
+        left: 45px;
+        padding: 15px; }
+      .hero-section .friends .friend .dot-red {
+        position: absolute;
+        background: #ff444c;
+        border-radius: 50%;
+        bottom: 30px;
+        left: 55px;
+        padding: 5px; }
+      .hero-section .friends .friend .dot-green {
+        position: absolute;
+        background: #45ca19;
+        border-radius: 50%;
+        bottom: 30px;
+        left: 55px;
+        padding: 5px; }
+      .hero-section .friends .friend img {
+        margin-right: 11px; }
+  .hero-section .friends-img {
+    padding-left: 0;
+    padding-right: 0; }
+    .hero-section .friends-img .friends-img-1,
+    .hero-section .friends-img .friends-img-2,
+    .hero-section .friends-img .friends-img-3,
+    .hero-section .friends-img .friends-img-4,
+    .hero-section .friends-img .friends-img-5,
+    .hero-section .friends-img .friends-img-6,
+    .hero-section .friends-img .friends-img-7,
+    .hero-section .friends-img .friends-img-8,
+    .hero-section .friends-img .friends-img-9 {
+      height: 100px;
+      background-size: cover;
+      background-position: center center; }
+    .hero-section .friends-img .friends-img-9 {
+      position: relative; }
+      .hero-section .friends-img .friends-img-9 .ovarlay {
+        cursor: pointer;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        background: #00b4e2; }
+        .hero-section .friends-img .friends-img-9 .ovarlay h5 {
+          margin: 0; }
+        .hero-section .friends-img .friends-img-9 .ovarlay h2 {
+          margin-bottom: -15px; }
+  .hero-section .friend img {
+    border-radius: 50%;
+    width: 70px;
+    display: inline-block; }
+  .hero-section .friend p {
+    display: inline-block;
+    margin-bottom: 50px; }
+
+.hero-section .friends .friend img {
+  margin: 0px; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; }
+  .cards .card {
+    flex-basis: calc(48% - 20px);
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden; }
+    .cards .card .buttons {
+      text-align: center;
+      background: #e6e8ec;
+      color: #828f98;
+      padding: 5px 20px;
+      margin-bottom: -15px;
+      margin-right: -15px;
+      margin-left: -15px;
+      position: relative; }
+      .cards .card .buttons p {
+        display: inline-block;
+        margin-left: 15px; }
+    .cards .card .heart {
+      display: inline-block;
+      cursor: pointer; }
+    .cards .card .comments {
+      display: inline-block;
+      margin-right: 100px;
+      margin-left: 100px;
+      cursor: pointer; }
+    .cards .card .hand-lizard {
+      display: inline-block;
+      cursor: pointer; }
+    .cards .card .image {
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 200px;
+      position: relative; }
+      .cards .card .image .ovarlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(33, 35, 34, 0.68); }
+      .cards .card .image img {
+        position: absolute;
+        border-radius: 50%;
+        width: 100px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%); }
+      .cards .card .image h2 {
+        margin: 0;
+        color: #fff;
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translate(-50%); }
+      .cards .card .image .time {
+        color: #a9a8ae;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%); }
+        .cards .card .image .time span {
+          margin-right: 15px; }
+    .cards .card .content {
+      padding: 15px; }
+      .cards .card .content h3 {
+        margin: 0;
+        font-size: 25px;
+        margin-bottom: 10px; }
+
+/*# sourceMappingURL=style.css.map */
